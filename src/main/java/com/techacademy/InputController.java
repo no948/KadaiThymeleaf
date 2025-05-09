@@ -17,7 +17,7 @@ public class InputController {
     }
 
     @PostMapping("/output")
-    public String postForm(@RequestParam("previous") String previous, Model model) {
+    public String postOutput(@RequestParam("previous") String previous, Model model) {
         // フォームから送信されてきた値をModelに登録
         model.addAttribute("previous", previous);
         return "output";

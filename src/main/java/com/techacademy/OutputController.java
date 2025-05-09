@@ -13,7 +13,7 @@ public class OutputController {
         return "output";
     }
     @PostMapping("/input")
-    public String getLink(Model model) {
+    public String getInput(Model model) {
         model.addAttribute("previous");
         return "input";
     }
